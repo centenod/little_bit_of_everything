@@ -19,5 +19,5 @@ $ crontab -e
 
 add the following line at the bottom:
 
-'*' '*' '*' '*' '*' /bin/sh /home/pi/Desktop/ServerClient/runudpclient.sh
+* * * * * /bin/sh /home/pi/Desktop/ServerClient/runudpclient.sh
 
