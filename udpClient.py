@@ -21,5 +21,5 @@ def Main():
         s.close()
 
 if __name__ == '__main__':
-        Main()
+        Main() 
 
