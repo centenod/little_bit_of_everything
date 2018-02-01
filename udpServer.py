@@ -21,7 +21,7 @@ def Main():
 			if char in "( )'":
 				address = address.replace(char,'')
 		ts = time.asctime ( time.localtime(time.time()))
-		status = (data + "," + address + "," + "Up" + "," + "3" +','+ t$
+		status = (data + "," + address + "," + "Up" + "," + "3" +','+ ts)
 		l = status.split(',')
 		l.remove('5001')
 #               t = tuple(l)
