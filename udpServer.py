@@ -18,7 +18,7 @@ def Main():
                         if char in "( )'":
                                 address = address.replace(char,'')
                 ts = time.asctime ( time.localtime(time.time()))
-                status = (data + "," + address + "," + "Up" + "," + "3" + "," + ts)
+                status = (data + "," + address + "," + "UP" + "," + "3" + "," + ts)
                 l = status.split(',')
                 l.remove('5001')
                 print(l)
