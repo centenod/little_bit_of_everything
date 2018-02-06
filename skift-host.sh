@@ -5,8 +5,8 @@ echo 'Current host name:'$variable
 
 
 MAC1="$(cat /sys/class/net/eth0/address)"
-
 echo 'MAC address: '$MAC1
+
 MAC2="$(cat /sys/class/net/eth0/address | cut -c13-14)"
 MAC3="$(cat /sys/class/net/eth0/address | cut -c16-17)"
 compare='RPI-'$MAC2$MAC3
