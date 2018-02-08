@@ -2,7 +2,7 @@ import socket
 import netifaces as ni
 
 def Main():
-        host = ni.ifaddresses('wlan0')[ni.AF_INET][0]['addr']
+        host = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr']
         port = 5001
         server = ('255.255.255.255',5000)
 
