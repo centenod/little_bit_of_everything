@@ -23,6 +23,6 @@ for running the udp client file every minute with space of 5 seconds in bettew g
 $ crontab -e
 add the following line at the bottom:
 
-* * * * * /bin/sh /home/pi/Desktop/ServerClient/runudpclient.sh
-* * * * * /bin/sh /home/pi/Desktop/ServerClient/skift-host.sh
+* * * * * /bin/sh /etc/Telenor/runudpclient.sh
+* * * * * /bin/sh //etc/Telenor/changehost.sh
 
