@@ -23,6 +23,8 @@ for running the udp client file every minute with space of 5 seconds in bettew g
 $ crontab -e
 add the following line at the bottom:
 
-* * * * * /bin/sh /etc/Telenor/runudpclient.sh
-* * * * * /bin/sh //etc/Telenor/changehost.sh
+* * * * * /etc/Telenor/runudpclient.sh >> /etc/Telenor/losrunudpclient.log 2>&1     #log when the program was runned
+#0-59/15 * * * *  /etc/Telenor/changehost.sh >> /etc/Telenor/logChangehost.log 2>&1 #It will log everytime it runs
+@reboot python3 /etc/Telenor/udpServer.py >> /etc/Telenor/logudpServer.log          #It will log absolutly every broadcast a R-PI sends
+
 
