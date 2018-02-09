@@ -8,7 +8,8 @@ def Main():
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         s.bind(('',port))
 
-        print("Server started!")
+	ts = time.asctime ( time.localtime(time.time()))
+        print(" '/n' Server started! + ts")
         while True:
                 data, addr = s.recvfrom(1024)
                 data = data.decode('utf-8')
