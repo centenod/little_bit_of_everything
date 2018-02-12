@@ -1,3 +1,6 @@
+import csv
+import os
+
 def updatePiList(msg):
 
         fileEmpty = os.stat('piList.csv').st_size == 0
