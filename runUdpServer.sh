@@ -3,6 +3,6 @@
 
 echo '\n'
 dateRun="$(date)"
-echo $dateRun '  Runned  /etc/Telenor/runudpclient.sh'
+echo $dateRun '  Runned  /etc/Telenor/runSdpSlient.sh'
 
-python3 /etc/Telenor/udpServer.py
+sudo python3 /etc/Telenor/udpServer.py
