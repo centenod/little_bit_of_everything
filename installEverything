@@ -1,31 +1,56 @@
+
 #!/bin/sh
 
 
 dateRun="$(date)"
 echo $dateRun '  Runned  Install Update Upgrade'
 
-
-sudo mkdir /etc/Telenor
-sudo chown 777 pi:pi /etc/Telenor
-
-git clone git://github.com/diegoc16/little_bit_of_everything  /etc/Telenor/
-
-sudo mv /etc/Telenor/little_bit_of_everything /etc/Telenor/
-sudo rm -rf /etc/Telenor/little_bit_of_everything
-
-sudo chmod 777 /etc/Telenor/runUdpServer.sh
-sudo chmod 777 /etc/Telenor/sunUdpClient.sh
-sudo chmod 777 /etc/Telenor/changeHost.sh
-sudo chmod 777 /etc/Telenor/udpServer.py
-
 sudo apt-get update
-sudo apt-get upgrate -y
-
+echo '--------------------------------'
+echo '--------------------------------'
+#sudo apt-get upgrate
+echo '--------------------------------'
+echo '--------------------------------'
+sudo mkdir /etc/Telenor
+echo '--------------------------------'
+echo '--------------------------------'
+sudo chown pi:pi /etc/Telenor/
+echo '--------------------------------'
+echo '--------------------------------'
+sudo git clone git://github.com/diegoc16/little_bit_of_everything  /etc/Telenor/
+echo '--------------------------------'
+echo '--------------------------------'
+sudo mv /etc/Telenor/little_bit_of_everything/* /etc/Telenor/
+echo '--------------------------------'
+echo '--------------------------------'
+sudo rm -rf /etc/Telenor/little_bit_of_everything
+echo '--------------------------------'
+echo '--------------------------------'
+sudo chmod 777 /etc/Telenor/runUdpServer.sh
+echo '--------------------------------'
+echo '--------------------------------'
+sudo chmod 777 /etc/Telenor/runUdpClient.sh
+echo '--------------------------------'
+echo '--------------------------------'
+sudo chmod 777 /etc/Telenor/changeHost.sh
+echo '--------------------------------'
+echo '--------------------------------'
+sudo chmod 777 /etc/Telenor/udpServer.py
+echo '--------------------------------'
+echo '--------------------------------'
 sudo apt-get install -y isc-dhcp-server
+echo '--------------------------------'
+echo '--------------------------------'
 sudo pip3 install netifaces
+echo '--------------------------------'
+echo '--------------------------------'
 sudo easy_install3 pip
+echo '--------------------------------'
+echo '--------------------------------'
 sudo apt-get install -y nmap
-
-sudo rm /etc/dhcp/dhcpd.config
-sudo mv /etc/Telenor/dhcpd.config /etc/dhcp/   
-
+echo '--------------------------------'
+echo '--------------------------------'
+sudo rm /etc/dhcp/dhcpd.conf
+echo '--------------------------------'
+echo '--------------------------------'
+sudo mv /etc/Telenor/dhcpd.conf /etc/dhcp/
