@@ -1,4 +1,4 @@
-mport socket
+import socket
 import time
 from updatePiList import updatePiList
 
@@ -23,7 +23,7 @@ def Main():
                         if char in "( )'":
                                 address = address.replace(char,'')
                 ts = time.asctime ( time.localtime(time.time()))
-                status = (data + "," + address + "," + "UP" + "," + "3" + "," +$
+                status = (data + "," + address + "," + "UP" + "," + "3" + "," + ts)
                 l = status.split(',')
                 l.remove('5001')
                 print(l)
