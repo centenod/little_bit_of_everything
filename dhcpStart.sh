@@ -1,5 +1,3 @@
-/etc/Telenor/dhcpStart.sh
-
 #!/bin/bash
 
 macadr="$(cat /sys/class/net/eth0/address)"
