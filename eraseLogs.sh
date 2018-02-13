@@ -3,8 +3,8 @@
 
 echo 'Erasing'
 sudo rm /etc/Telenor/logChangehost.log
-sudo rm /etc/Telenor/logrunudpclient.log
-sudo rm /etc/Telenor/logrunudpserver.log
+sudo rm /etc/Telenor/logRunudpClient.log
+sudo rm /etc/Telenor/logRunUdpServer.log
 
 
 echo ''
