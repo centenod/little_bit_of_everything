@@ -5,3 +5,4 @@ sudo sed -i "s/thismacaddress/$macadr/g" /etc/dhcp/dhcpd.conf
 
 
 # now it should start the DHCP service
+# sudo systemctl restart isc-dhcp-server
