@@ -53,4 +53,4 @@ echo '--------------------------------'
 sudo rm /etc/dhcp/dhcpd.conf
 echo '--------------------------------'
 echo '--------------------------------'
-sudo mv /etc/Telenor/dhcpd.conf /etc/dhcp/
+sudo cp /etc/Telenor/dhcpd.conf /etc/dhcp/
