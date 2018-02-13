@@ -4,7 +4,7 @@ from updatePiList import updatePiList
 
 def Main():
         port = 5000
-
+        time.sleep(30)
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         s.bind(('',port))
         print()
