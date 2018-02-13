@@ -13,10 +13,10 @@ git clone git://github.com/diegoc16/little_bit_of_everything  /etc/Telenor/
 sudo mv /etc/Telenor/little_bit_of_everything /etc/Telenor/
 sudo rm -rf /etc/Telenor/little_bit_of_everything
 
-sudo chown 777 runUdpServer.sh
-sudo chown 777 sunUdpClient.sh
-sudo chown 777 changeHost.sh
-sudo chown 777 udpServer.py
+sudo chmod 777 /etc/Telenor/runUdpServer.sh
+sudo chmod 777 /etc/Telenor/sunUdpClient.sh
+sudo chmod 777 /etc/Telenor/changeHost.sh
+sudo chmod 777 /etc/Telenor/udpServer.py
 
 sudo apt-get update
 sudo apt-get upgrate -y
