@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dateRun="$(date)"
-echo $dateRun '  Runned  /etc/Telenor/changehost.sh'
+echo $dateRun '  Runned  /etc/Telenor/changeHost.sh'
 
 actual="$(hostname)"
 #echo 'Current host name:  '$actual
