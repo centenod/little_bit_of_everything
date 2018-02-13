@@ -29,3 +29,11 @@ add the following line at the bottom:
 @reboot /etc/Telenor/runudpserver.sh >> /etc/Telenor/logudpserver.log 2>&1
 
 
+/etc/Telenor contains:
+updClient.py
+udpServer.py
+updatePiList.py
+piList.csv
+runUdpClient.sh
+runUdpServer.sh
+changeHost.sh
