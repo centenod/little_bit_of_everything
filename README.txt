@@ -37,3 +37,6 @@ piList.csv
 runUdpClient.sh
 runUdpServer.sh
 changeHost.sh
+
+pi@raspberrypi:/etc/Telenor $ sudo chown pi:pi /etc/Telenor
+sudo chmod 777 "files that need permision"
