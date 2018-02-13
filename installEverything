@@ -1,0 +1,31 @@
+#!/bin/sh
+
+
+dateRun="$(date)"
+echo $dateRun '  Runned  Install Update Upgrade'
+
+
+sudo mkdir /etc/Telenor
+sudo chown 777 pi:pi /etc/Telenor
+
+git clone git://github.com/diegoc16/little_bit_of_everything  /etc/Telenor/
+
+sudo mv /etc/Telenor/little_bit_of_everything /etc/Telenor/
+sudo rm -rf /etc/Telenor/little_bit_of_everything
+
+sudo chown 777 runUdpServer.sh
+sudo chown 777 sunUdpClient.sh
+sudo chown 777 changeHost.sh
+sudo chown 777 udpServer.py
+
+sudo apt-get update
+sudo apt-get upgrate -y
+
+sudo apt-get install -y isc-dhcp-server
+sudo pip3 install netifaces
+sudo easy_install3 pip
+sudo apt-get install -y nmap
+
+sudo rm /etc/dhcp/dhcpd.config
+sudo mv /etc/Telenor/dhcpd.config /etc/dhcp/   
+
