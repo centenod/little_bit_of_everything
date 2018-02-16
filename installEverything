@@ -50,6 +50,9 @@ echo '--------------------------------'
 sudo apt-get install -y nmap
 echo '--------------------------------'
 echo '--------------------------------'
+sudo cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf_backupfile
+echo '--------------------------------'
+echo '--------------------------------'
 sudo rm /etc/dhcp/dhcpd.conf
 echo '--------------------------------'
 echo '--------------------------------'
