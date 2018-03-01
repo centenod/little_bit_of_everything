@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ClusterDHCPstart.sh :
+# dhcpStart.sh :
 # 1. Delete the interface system file and replace it with a
 # file with the static IP used by the dhcpd.conf file.
 # 2. A dhcpd.conf file was previously configured and copy with
