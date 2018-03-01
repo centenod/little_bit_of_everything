@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# ClusterDHCPstop.sh
+# dhcpStop.sh
 # 
 # 1.Stop the dhcp-Server 
 # 2.Delete the static IP file from the system and replace it 
