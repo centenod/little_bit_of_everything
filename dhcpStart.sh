@@ -1,12 +1,14 @@
 #!/bin/bash
 
 # dhcpStart.sh :
-# 1. Delete the interface system file and replace it with a
+# 1. Edit the /etc/default/isc-dhcp-server file for setting the 
+# INTERFACESv4 to  "eth0"  for the DHCP service
+# 2. Delete the interface system file and replace it with a
 # file with the static IP used by the dhcpd.conf file.
-# 2. A dhcpd.conf file was previously configured and copy with
+# 3. A dhcpd.conf file was previously configured and copy with
 # the dhcp parameters to the dhcp system folder. This file is 
 # just used when the dhcp-server is in use.
-# 3. Launch the dhcp-Server
+# 4. Launch the dhcp-Server
 
 #--------------------------Delete and copy the interface file
 sudo cp 
