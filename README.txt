@@ -2,6 +2,18 @@
 little_bit_of_everything
 
 
+Steps to fully configure a node:
+
+1. Update and upgrade the OS.
+2. Download the files from GitHub
+
+
+
+
+
+
+
+
 Downloading the files:
 
 
