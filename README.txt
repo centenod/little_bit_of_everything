@@ -5,7 +5,18 @@ little_bit_of_everything
 Steps to fully configure a node:
 
 1. Update and upgrade the OS.
-2. Download the files from GitHub
+2. Download the files from GitHub:
+$ git clone git://github.com/Laassee/masterT /home/pi
+3. Move the folder "telenor" :
+$ mv /home/pi/masterT/t* /home/pi/
+4. Delete the folder downloaded from GitHub:
+$sudo rm -r /home/pi/masterT/
+5. Install applications and programs used:
+$ sudo apt-get update && sudo apt-get upgrade -y
+$ sudo pip3 install netifaces 
+$ sudo easy_install3 pip 
+$ sudo apt-get install -y isc-dhcp-server 
+$ sudo apt-get install -y nmap
 
 
 
