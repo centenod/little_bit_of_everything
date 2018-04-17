@@ -36,3 +36,5 @@ $ sudo rm /etc/dhcp/dhcpd.conf && sudo cp /home/pi/telenor/network/custom_dhcpd.
 
 ###### 8. Update which inteface the DHCP service should work with (replace existing file): 
 $ sudo rm /etc/default/isc-dhcp-server && sudo cp /home/pi/telenor/network/isc-dhcp-server /etc/default/isc-dhcp-server
+
+https://sourceforge.net/projects/hexinject/files/hexinject-1.6/hexinject-1.6.tar.gz/download
