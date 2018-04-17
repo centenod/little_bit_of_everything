@@ -39,3 +39,4 @@ $ sudo rm /etc/default/isc-dhcp-server && sudo cp /home/pi/telenor/network/isc-d
 
 https://sourceforge.net/projects/hexinject/files/hexinject-1.6/hexinject-1.6.tar.gz/download
 https://sourceforge.net/projects/hexinject/files/latest/download?source=files
+https://sourceforge.net/projects/hexinject/files/hexinject-1.6/hexinject-1.6.tar.gz/download?use_mirror=freefr
